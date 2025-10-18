@@ -46,8 +46,8 @@ public class LoginActivity extends AppCompatActivity {
             if (dbHelper.checkUser(email, password)) {
                 Toast.makeText(this, "Inicio de sesión exitoso 🎮", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, CatalogActivity.class);
-                startActivity(intent);
-                finish(); // Evita volver atrás al splash o login
+                intent.putExtra("email", email); // enviar correo del usuario logueado
+                startActivity(intent); // Evita volver atrás al splash o login
             } else {
                 Toast.makeText(this, "Credenciales incorrectas ❌", Toast.LENGTH_SHORT).show();
             }

@@ -27,12 +27,14 @@ public class CatalogActivity extends AppCompatActivity {
     private ProductAdapter adapter;
     private List<Product> productList;
     private List<Product> filteredList;
+    private String userEmail;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalog);
-
+        userEmail = getIntent().getStringExtra("email");
         recyclerView = findViewById(R.id.recyclerProducts);
         etSearch = findViewById(R.id.etSearch);
         btnGoProfile = findViewById(R.id.btnGoProfile);
@@ -63,8 +65,10 @@ public class CatalogActivity extends AppCompatActivity {
         // 👤 Ir al perfil
         btnGoProfile.setOnClickListener(v -> {
             Intent intent = new Intent(CatalogActivity.this, ProfileActivity.class);
+            intent.putExtra("email", userEmail); // Envía el correo del usuario
             startActivity(intent);
         });
+
     }
 
     private void filterProducts(String query) {

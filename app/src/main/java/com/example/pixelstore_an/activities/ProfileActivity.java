@@ -52,6 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
         // Volver al catálogo
         btnBackCatalog.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, CatalogActivity.class);
+            intent.putExtra("email", userEmail); // vuelve a enviar el correo
             startActivity(intent);
             finish();
         });
