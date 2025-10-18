@@ -6,4 +6,6 @@
     <color name="background_dark">#121212</color>
     <color name="text_light">#FFFFFF</color>
     <color name="accent">#FF0266</color>
+    <color name="splash_background_color">#0B021A</color> <!-- negro con tinte morado -->
+    <color name="purple_gamer">#A020F0</color> <!-- morado brillante -->
 </resources>

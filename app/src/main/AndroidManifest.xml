@@ -16,7 +16,8 @@
         <!-- 🔹 Splash: pantalla inicial -->
         <activity
             android:name=".activities.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.PixelStore_AN.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,7 +25,8 @@
         </activity>
 
         <!-- 🔹 Bienvenida -->
-        <activity android:name=".activities.WelcomeActivity" />
+        <activity android:name=".activities.WelcomeActivity"
+            android:theme="@style/Theme.PixelStore_AN"/>
 
         <!-- 🔹 Login -->
         <activity android:name=".activities.LoginActivity" />

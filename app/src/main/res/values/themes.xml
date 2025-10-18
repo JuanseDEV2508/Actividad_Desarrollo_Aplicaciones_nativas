@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PixelStore_AN" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Tema principal de la app -->
+    <style name="Theme.PixelStore_AN" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_gamer</item>
+
+        <item name="android:windowBackground">@color/splash_background_color</item>
     </style>
 
-    <style name="Theme.PixelStore_AN" parent="Base.Theme.PixelStore_AN" />
+    <!-- Tema especial solo para el Splash -->
+    <style name="Theme.PixelStore_AN.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
