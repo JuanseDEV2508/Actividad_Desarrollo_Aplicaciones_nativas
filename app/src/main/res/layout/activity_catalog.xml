@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gamer"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔍 Barra de búsqueda -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:hint="Buscar productos..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:backgroundTint="@color/primary"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 📦 Lista de productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- 👤 Botón para ir al perfil -->
+    <Button
+        android:id="@+id/btnGoProfile"
+        android:text="Ir a mi perfil"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
