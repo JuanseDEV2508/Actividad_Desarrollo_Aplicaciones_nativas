@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">PixelStore_AN</string>
+    <string name="title_register">Crear Cuenta</string>
+
+    <!-- Hints -->
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_search">Buscar productos...</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="hint_phone">Teléfono</string>
+    <string name="hint_age">Edad</string>
+
+    <string name="welcome_title">🎮 ¡Bienvenido a PixelStore!</string>
+    <string name="logo_description">Logo de PixelStore</string>
+
+    <string name="product_image_description">Imagen del producto</string>
+    <string name="product_name_placeholder">Nombre del producto</string>
+    <string name="product_category_placeholder">Categoría</string>
+    <string name="product_price_placeholder">$0.00</string>
+
+    <!-- Botones -->
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_register">Registrarme</string>
+    <string name="btn_go_profile">Ir a mi perfil</string>
+    <string name="btn_save_profile">Guardar Cambios</string>
+    <string name="btn_back_catalog">Volver al Catálogo</string>
+
+
+    <string name="desc_logo">Logo</string>
+    <string name="desc_profile_image">Imagen de perfil del usuario</string>
 </resources>

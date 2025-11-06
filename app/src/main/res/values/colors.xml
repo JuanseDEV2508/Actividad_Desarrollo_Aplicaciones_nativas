@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Se eligieron los colores de acuerdo a la paleta de colores del Mockup-->
+<!-- Paleta de colores basada en el Mockup estilo gamer -->
 <resources>
-    <color name="primary">#BB86FC</color>
-    <color name="secondary">#03DAC5</color>
-    <color name="background_dark">#121212</color>
+
+    <!--  Colores principales -->
+    <color name="primary">#BB86FC</color> <!-- Morado principal -->
+    <color name="secondary">#03DAC5</color> <!-- Cian brillante -->
+    <color name="accent">#FF0266</color> <!-- Rosa fucsia de acento -->
+
+    <!-- Colores Fondos -->
+    <color name="background_dark">#121212</color> <!-- Fondo general -->
+    <color name="splash_background_color">#0B021A</color> <!-- Fondo del splash -->
+    <color name="purple_gamer">#A020F0</color> <!-- Morado brillante gamer -->
+
+    <!-- Colores Textos -->
     <color name="text_light">#FFFFFF</color>
-    <color name="accent">#FF0266</color>
-    <color name="splash_background_color">#0B021A</color> <!-- negro con tinte morado -->
-    <color name="purple_gamer">#A020F0</color> <!-- morado brillante -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AFAFAF</color>
+
+    <!-- Colores Botones -->
+    <color name="text_button">#FFFFFF</color>
+    <color name="card_background">#1E1E1E</color>
 </resources>

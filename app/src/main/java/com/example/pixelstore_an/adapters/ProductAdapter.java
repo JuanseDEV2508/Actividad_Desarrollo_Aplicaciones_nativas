@@ -17,10 +17,24 @@ import java.util.List;
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
 
     private final List<Product> products;
+    private final OnProductClickListener listener;
 
+    // 👇 Interfaz para manejar el clic
+    public interface OnProductClickListener {
+        void onProductClick(Product product);
+    }
+
+    // Constructor alternativo sin listener (para vistas de solo lectura)
     public ProductAdapter(List<Product> products) {
         this.products = products;
+        this.listener = product -> {}; // listener vacío que no hace nada
     }
+
+    public ProductAdapter(List<Product> products, OnProductClickListener listener) {
+        this.products = products;
+        this.listener = listener;
+    }
+
 
     @NonNull
     @Override
@@ -37,6 +51,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.tvCategory.setText(p.getCategory());
         holder.tvPrice.setText("$" + p.getPrice());
         holder.imgProduct.setImageResource(p.getImage());
+
+        // 👇 Evento de clic: llama al listener
+        holder.itemView.setOnClickListener(v -> listener.onProductClick(p));
     }
 
     @Override

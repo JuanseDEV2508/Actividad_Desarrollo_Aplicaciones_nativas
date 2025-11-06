@@ -43,6 +43,9 @@
         <!-- 🔹 Detalle de producto -->
         <activity android:name=".activities.ProfileActivity"/>
 
+        <!-- 🔹 CRUD de producto -->
+        <activity android:name=".activities.ProductManagerActivity"/>
+
 
 
 

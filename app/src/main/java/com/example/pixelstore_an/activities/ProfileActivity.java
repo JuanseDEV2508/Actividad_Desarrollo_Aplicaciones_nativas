@@ -36,11 +36,14 @@ public class ProfileActivity extends AppCompatActivity {
 
         dbHelper = new DatabaseHelper(this);
 
-        // Recibir el correo del Intent (desde LoginActivity)
-        userEmail = getIntent().getStringExtra("email");
+        User currentUser = (User) getIntent().getSerializableExtra("user");
+        if (currentUser != null) {
+            loadUserData(currentUser.getEmail());
+        }
 
-        if (userEmail != null) {
-            loadUserData(userEmail);
+
+        if (currentUser != null) {
+            loadUserData(currentUser.getEmail());
         } else {
             Toast.makeText(this, "Error: No se encontró el usuario", Toast.LENGTH_SHORT).show();
             finish();

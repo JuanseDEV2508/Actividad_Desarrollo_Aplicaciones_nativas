@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_dark"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <!-- Imagen del usuario -->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/default_avatar"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_border"
+        android:padding="4dp" />
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario Gamer"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correo@ejemplo.com"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>
